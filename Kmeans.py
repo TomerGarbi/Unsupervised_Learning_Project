@@ -183,6 +183,7 @@ def mandrill(k, path):
     title = "Modified Image, k=" + str(k)
     plot_image(centroids, labels, title, size)
 
+
 def test_mandrill():
     path = "mandrill.png"
     original_image = PIL.Image.open(path)
@@ -197,4 +198,6 @@ def main():
     test_2d(5)
     test_mandrill()
 
-main()
+
+if __name__ == "__main__":
+    main()
